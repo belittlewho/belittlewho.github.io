@@ -37,7 +37,7 @@
 
     <main id="main">
       <section class="hero wrap">
-        <p class="eyebrow">Software · embedded Linux · networks · security research · Ghana</p>
+        <p class="eyebrow">Software · shell automation · embedded Linux · networks · security · Ghana</p>
         <h1>Humphrey Wills Tay</h1>
         <p class="lead">
           I ship <strong>commerce platforms and plant technology</strong>, build <strong>firmware and
@@ -67,7 +67,8 @@
         </p>
         <p>
           My engineering spans <strong>MCU firmware</strong>, <strong>Buildroot and Yocto</strong> based
-          embedded Linux, <strong>network design and troubleshooting</strong>, and
+          embedded Linux, <strong>Bash/shell automation</strong> for deploy and ops,
+          <strong>network design and troubleshooting</strong>, and
           <strong>full-stack security research</strong> (application, cloud, network, and embedded
           surfaces). I document and teach through open
           <a href="https://github.com/belittlewho/solo-devops-devsecops">DevOps/DevSecOps</a> and
@@ -166,6 +167,38 @@
             </ul>
           </li>
         </ul>
+
+        <h3 class="subsection-title">Shell scripting &amp; automation</h3>
+        <div class="detail-grid detail-grid-2">
+          <article class="detail-card">
+            <h4>Bash / POSIX</h4>
+            <ul>
+              <li>Portable <code>#!/bin/sh</code> vs Bash when appropriate</li>
+              <li>Functions, strict mode (<code>set -euo pipefail</code>), traps, error handling</li>
+              <li>Arguments, env vars, here-docs, process substitution</li>
+              <li>Exit codes and CI-friendly failure messages</li>
+            </ul>
+          </article>
+          <article class="detail-card">
+            <h4>Text &amp; sysadmin tooling</h4>
+            <ul>
+              <li><code>grep</code>, <code>sed</code>, <code>awk</code>, <code>cut</code>, <code>sort</code>, <code>xargs</code></li>
+              <li><code>find</code>, <code>test</code>/<code>[ ]</code>, loops over files safely</li>
+              <li><code>curl</code>/<code>wget</code> for health checks and hooks</li>
+              <li><code>shellcheck</code> in editor and CI</li>
+            </ul>
+          </article>
+          <article class="detail-card">
+            <h4>Where scripts ship value</h4>
+            <ul>
+              <li>Deploy, rollback, backup/restore (PostgreSQL, volumes)</li>
+              <li>Buildroot/Yocto wrapper and release tagging scripts</li>
+              <li>Network smoke tests (DNS, TLS expiry, port probes)</li>
+              <li>Security pipelines: scan wrappers, log triage, audit helpers</li>
+              <li>systemd-less cron/timer companions for ops tasks</li>
+            </ul>
+          </article>
+        </div>
 
         <h3 class="subsection-title">Embedded Linux — Buildroot &amp; Yocto Project</h3>
         <div class="detail-grid">
@@ -271,6 +304,7 @@
               <li><code>tcpdump</code> / Wireshark: filters, follow TCP stream</li>
               <li><code>nmap</code> (scoped), <code>iperf3</code> throughput/latency</li>
               <li>Document topology; baseline before/after changes</li>
+              <li>Shell one-liners and scripts for repeatable captures (pcap, routes, DNS)</li>
             </ul>
           </article>
         </div>
@@ -352,7 +386,7 @@
           </article>
           <article class="detail-card">
             <h4>Network &amp; host</h4>
-            <p class="tool-line">Wireshark · tcpdump · nmap · masscan (lab) · OpenVAS awareness · Lynis · ssh-audit</p>
+            <p class="tool-line">Wireshark · tcpdump · nmap · masscan (lab) · Lynis · ssh-audit · Bash automation for scoped scans &amp; reports</p>
           </article>
           <article class="detail-card">
             <h4>Process artifacts</h4>
@@ -447,6 +481,8 @@
           <li>Next.js / React</li>
           <li>Medusa</li>
           <li>Python</li>
+          <li>Bash / POSIX sh</li>
+          <li>awk · sed · shellcheck</li>
           <li>PostgreSQL</li>
           <li>Docker · Linux</li>
           <li>GitHub Actions</li>
