@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Humphrey Wills Tay — software, embedded Linux (Buildroot/Yocto), network engineering, security research, and commerce platforms."
+      content="Humphrey Wills Tay — software engineering, embedded systems engineering, embedded software engineering, and security research."
     />
-    <title>Humphrey Wills Tay · Engineer · Security Research</title>
+    <title>Humphrey Wills Tay · Software &amp; Embedded Engineer · Security Research</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,9 +23,11 @@
         <a class="logo" href="#">HWT</a>
         <nav aria-label="Primary">
           <a href="#work">Work</a>
-          <a href="#embedded">Embedded</a>
-          <a href="#networking">Networking</a>
+          <a href="#software-engineering">Software</a>
+          <a href="#embedded-systems">Emb. systems</a>
+          <a href="#embedded-software">Emb. software</a>
           <a href="#security">Security</a>
+          <a href="#networking">Networking</a>
           <a href="#softskills">Soft skills</a>
           <a href="#tooling">Tools</a>
           <a href="#guides">Guides</a>
@@ -38,16 +40,17 @@
 
     <main id="main">
       <section class="hero wrap">
-        <p class="eyebrow">Software · shell automation · embedded Linux · networks · security · Ghana</p>
+        <p class="eyebrow">Ghana · four engineering disciplines</p>
         <h1>Humphrey Wills Tay</h1>
         <p class="lead">
-          I ship <strong>commerce platforms and plant technology</strong>, build <strong>firmware and
-          embedded Linux images</strong>, design and troubleshoot <strong>networks</strong>, and conduct
-          <strong>security research</strong> from threat model to verified fix — with the communication
-          skills to align teams, operators, and stakeholders.
+          I work across <strong>software engineering</strong>, <strong>embedded systems engineering</strong>,
+          <strong>embedded systems software engineering</strong>, and <strong>security research</strong> —
+          from Medusa storefronts and APIs to MCU firmware, Buildroot/Yocto images, plant networks, and
+          verified fixes for real vulnerabilities.
         </p>
         <div class="hero-cta">
-          <a class="btn primary" href="#work">View work</a>
+          <a class="btn primary" href="#disciplines">Disciplines</a>
+          <a class="btn ghost" href="#work">View work</a>
           <a class="btn ghost" href="#security">Security research</a>
           <a class="btn ghost" href="mailto:askdenlitecrete@gmail.com">Email</a>
         </div>
@@ -67,15 +70,47 @@
           factory floor.
         </p>
         <p>
-          My engineering spans <strong>MCU firmware</strong>, <strong>Buildroot and Yocto</strong> based
-          embedded Linux, <strong>Bash/shell automation</strong> for deploy and ops,
-          <strong>network design and troubleshooting</strong>, and
-          <strong>full-stack security research</strong> (application, cloud, network, and embedded
-          surfaces). I document and teach through open
+          I practice four distinct disciplines (each with its own section below). They overlap in production
+          — for example, a plant gateway may combine MCU I/O, a Yocto userland, and a secured API — but
+          the skills and deliverables differ. I also publish open
           <a href="https://github.com/belittlewho/solo-devops-devsecops">DevOps/DevSecOps</a> and
           <a href="https://github.com/belittlewho/solo-software-project-management">project management</a>
           guides on GitHub.
         </p>
+      </section>
+
+      <section class="wrap section" id="disciplines">
+        <h2>Engineering disciplines</h2>
+        <ul class="discipline-grid">
+          <li class="discipline-card">
+            <a href="#software-engineering">
+              <span class="discipline-num">01</span>
+              <h3>Software engineering</h3>
+              <p>Applications, APIs, commerce platforms, data, CI/CD, architecture, and quality.</p>
+            </a>
+          </li>
+          <li class="discipline-card">
+            <a href="#embedded-systems">
+              <span class="discipline-num">02</span>
+              <h3>Embedded systems engineering</h3>
+              <p>MCUs, firmware, sensors, actuators, buses, and hardware-aware debug on the device.</p>
+            </a>
+          </li>
+          <li class="discipline-card">
+            <a href="#embedded-software">
+              <span class="discipline-num">03</span>
+              <h3>Embedded systems software engineering</h3>
+              <p>Linux on device: Buildroot/Yocto, userland apps, drivers, IPC, and field updates.</p>
+            </a>
+          </li>
+          <li class="discipline-card">
+            <a href="#security">
+              <span class="discipline-num">04</span>
+              <h3>Security research</h3>
+              <p>Threat modeling, vuln analysis, PoC, remediation, and responsible disclosure.</p>
+            </a>
+          </li>
+        </ul>
       </section>
 
       <section class="wrap section" id="work">
@@ -122,52 +157,83 @@
         </ul>
       </section>
 
-      <section class="wrap wrap-wide section" id="embedded">
-        <h2>Embedded systems engineering</h2>
+      <section class="wrap wrap-wide section" id="software-engineering">
+        <h2>Software engineering</h2>
         <p class="section-intro">
-          From bare-metal MCUs to custom Linux images — hardware-aware software that must run for years
-          without a developer nearby.
+          Product-grade applications and platforms — requirements through deployment — with traceability,
+          testing, and operability built in (not bolted on after launch).
         </p>
 
-        <h3 class="subsection-title">Firmware &amp; microcontrollers</h3>
+        <h3 class="subsection-title">Stack &amp; product surfaces</h3>
         <ul class="skill-columns skill-columns-4">
           <li>
-            <h4>Languages &amp; RTOS</h4>
+            <h4>Languages &amp; runtime</h4>
             <ul>
-              <li>Embedded C / C++ (MISRA-aware where required)</li>
-              <li>Bare-metal superloops and interrupt-driven design</li>
-              <li>FreeRTOS (tasks, queues, semaphores, timers)</li>
-              <li>Watchdogs, brown-out, safe boot paths</li>
+              <li>TypeScript / JavaScript (Node.js)</li>
+              <li>Python for tooling, glue, and test harnesses</li>
+              <li>SQL for data modeling and performance tuning</li>
+              <li>HTML/CSS for accessible, maintainable UI</li>
             </ul>
           </li>
           <li>
-            <h4>Platforms</h4>
+            <h4>Web &amp; commerce</h4>
             <ul>
-              <li>STM32 (HAL / LL, clock trees, DMA)</li>
-              <li>ESP32 (Wi‑Fi/BT stacks, power modes)</li>
-              <li>AVR / Arduino-class bring-up</li>
-              <li>Device tree awareness for Linux targets</li>
+              <li>Next.js (App Router, SSR/SSG, middleware)</li>
+              <li>Medusa 2 (modules, workflows, admin, storefront integration)</li>
+              <li>REST and webhook-driven integrations</li>
+              <li>Auth sessions, RBAC, multi-tenant B2B patterns</li>
             </ul>
           </li>
           <li>
-            <h4>Buses &amp; I/O</h4>
+            <h4>Data &amp; backend</h4>
             <ul>
-              <li>UART, I2C, SPI, CAN (where deployed)</li>
-              <li>GPIO, PWM, ADC, timers</li>
-              <li>Sensors: level, flow, temperature, pressure</li>
-              <li>Actuators, relays, VFD/Modbus interfaces</li>
+              <li>PostgreSQL, migrations, indexing, backups</li>
+              <li>Redis-style caching where it earns its keep</li>
+              <li>Object storage and CDN-aware asset delivery</li>
+              <li>Observability: structured logs, health checks, metrics hooks</li>
             </ul>
           </li>
           <li>
-            <h4>Debug &amp; release</h4>
+            <h4>Engineering practice</h4>
             <ul>
-              <li>JTAG / SWD, OpenOCD, GDB</li>
-              <li>Logic analyzer &amp; oscilloscope correlation</li>
-              <li>Bootloaders, signed firmware, versioned rollouts</li>
-              <li>Python harnesses on host for HIL smoke tests</li>
+              <li>Requirements, RTM, and ADRs (see open PM guide)</li>
+              <li>Unit / integration / smoke tests; CI gates</li>
+              <li>Code review, semver, changelog discipline</li>
+              <li>Security-aware defaults (see security research section)</li>
             </ul>
           </li>
         </ul>
+
+        <h3 class="subsection-title">Delivery &amp; architecture</h3>
+        <div class="detail-grid detail-grid-2">
+          <article class="detail-card">
+            <h4>APIs &amp; integration</h4>
+            <ul>
+              <li>Resource design, pagination, idempotency keys</li>
+              <li>Versioning, error contracts, rate limits</li>
+              <li>Third-party payments, shipping, and ERP hooks</li>
+              <li>Contract tests and staged rollouts</li>
+            </ul>
+          </article>
+          <article class="detail-card">
+            <h4>CI/CD &amp; environments</h4>
+            <ul>
+              <li>GitHub Actions pipelines (lint, test, build, deploy)</li>
+              <li>Preview vs production parity; secrets management</li>
+              <li>Docker for local and server workloads</li>
+              <li>Rollback paths and runbooks tied to releases</li>
+            </ul>
+          </article>
+          <article class="detail-card">
+            <h4>Representative work</h4>
+            <ul>
+              <li><strong>Askden Ghana</strong> — Medusa + Next.js B2C/B2B storefronts</li>
+              <li>Module boundaries that match business capabilities</li>
+              <li>Operational scripts for backup, deploy, and smoke checks</li>
+              <li>Documentation for handoff and long-term maintenance</li>
+            </ul>
+          </article>
+        </div>
 
         <h3 class="subsection-title">Shell scripting &amp; automation</h3>
         <div class="detail-grid detail-grid-2">
@@ -193,15 +259,81 @@
             <h4>Where scripts ship value</h4>
             <ul>
               <li>Deploy, rollback, backup/restore (PostgreSQL, volumes)</li>
-              <li>Buildroot/Yocto wrapper and release tagging scripts</li>
+              <li>Release tagging and pipeline wrappers</li>
               <li>Network smoke tests (DNS, TLS expiry, port probes)</li>
               <li>Security pipelines: scan wrappers, log triage, audit helpers</li>
-              <li>systemd-less cron/timer companions for ops tasks</li>
+              <li>Cron/timer companions for ops tasks</li>
             </ul>
           </article>
         </div>
+      </section>
 
-        <h3 class="subsection-title">Embedded Linux — Buildroot &amp; Yocto Project</h3>
+      <section class="wrap wrap-wide section" id="embedded-systems">
+        <h2>Embedded systems engineering</h2>
+        <p class="section-intro">
+          The physical and microcontroller layer — firmware, buses, and field debug on hardware that must
+          survive power loss, EMI, and years without a developer on site. (Linux images and on-device apps
+          live under <a href="#embedded-software">embedded systems software engineering</a>.)
+        </p>
+
+        <h3 class="subsection-title">Firmware &amp; microcontrollers</h3>
+        <ul class="skill-columns skill-columns-4">
+          <li>
+            <h4>Languages &amp; RTOS</h4>
+            <ul>
+              <li>Embedded C / C++ (MISRA-aware where required)</li>
+              <li>Bare-metal superloops and interrupt-driven design</li>
+              <li>FreeRTOS (tasks, queues, semaphores, timers)</li>
+              <li>Watchdogs, brown-out, safe boot paths</li>
+            </ul>
+          </li>
+          <li>
+            <h4>Platforms</h4>
+            <ul>
+              <li>STM32 (HAL / LL, clock trees, DMA)</li>
+              <li>ESP32 (Wi‑Fi/BT stacks, power modes)</li>
+              <li>AVR / Arduino-class bring-up</li>
+              <li>Companion MCUs alongside Linux gateways (handoff to emb. software)</li>
+            </ul>
+          </li>
+          <li>
+            <h4>Buses &amp; I/O</h4>
+            <ul>
+              <li>UART, I2C, SPI, CAN (where deployed)</li>
+              <li>GPIO, PWM, ADC, timers</li>
+              <li>Sensors: level, flow, temperature, pressure</li>
+              <li>Actuators, relays, VFD/Modbus interfaces</li>
+            </ul>
+          </li>
+          <li>
+            <h4>Debug &amp; release</h4>
+            <ul>
+              <li>JTAG / SWD, OpenOCD, GDB</li>
+              <li>Logic analyzer &amp; oscilloscope correlation</li>
+              <li>Bootloaders, signed firmware, versioned rollouts</li>
+              <li>Python harnesses on host for HIL smoke tests</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3 class="subsection-title">Plant &amp; OT context</h3>
+        <p class="section-intro">
+          At <strong>Voltic (Golden Rains LTD.)</strong> Cool Pac operations, embedded work ties to
+          sensors, actuators, and reliable control paths — coordinated with
+          <a href="#networking">network segmentation</a> and <a href="#security">security research</a>
+          on exposed interfaces.
+        </p>
+      </section>
+
+      <section class="wrap wrap-wide section" id="embedded-software">
+        <h2>Embedded systems software engineering</h2>
+        <p class="section-intro">
+          Software that runs <em>on</em> embedded Linux (and similar) — custom images, userland services,
+          drivers, IPC, and updates — distinct from bare-metal MCU firmware in
+          <a href="#embedded-systems">embedded systems engineering</a>.
+        </p>
+
+        <h3 class="subsection-title">Image build — Buildroot &amp; Yocto Project</h3>
         <div class="detail-grid">
           <article class="detail-card">
             <h4>Buildroot</h4>
@@ -238,6 +370,46 @@
             </ul>
           </article>
         </div>
+
+        <h3 class="subsection-title">Userland, IPC &amp; edge services</h3>
+        <ul class="skill-columns skill-columns-4">
+          <li>
+            <h4>On-device applications</h4>
+            <ul>
+              <li>C/C++ daemons and libraries on target rootfs</li>
+              <li>Python/Node services where footprint allows</li>
+              <li>Configuration via overlays, env, and signed bundles</li>
+              <li>Cross-compile vs SDK workflows from Yocto</li>
+            </ul>
+          </li>
+          <li>
+            <h4>IPC &amp; connectivity</h4>
+            <ul>
+              <li>Unix sockets, D-Bus, MQTT to brokers</li>
+              <li>Serial/CAN bridges to MCU firmware (see emb. systems)</li>
+              <li>Local REST/gRPC between co-located services</li>
+              <li>Store-and-forward when uplink is intermittent</li>
+            </ul>
+          </li>
+          <li>
+            <h4>Kernel &amp; hardware interface</h4>
+            <ul>
+              <li>Device trees, GPIO/SPI/I2C from Linux</li>
+              <li>Out-of-tree modules and udev rules</li>
+              <li>Peripheral bring-up with scope and analyzer</li>
+              <li>Resource limits and cgroup awareness</li>
+            </ul>
+          </li>
+          <li>
+            <h4>Operations on device</h4>
+            <ul>
+              <li>systemd units, watchdog integration, remote journal</li>
+              <li>Read-only root, A/B or signed OTA patterns</li>
+              <li>Factory provisioning and secure key storage</li>
+              <li>SBOM and patch cadence from image builds</li>
+            </ul>
+          </li>
+        </ul>
       </section>
 
       <section class="wrap wrap-wide section" id="networking">
@@ -534,15 +706,21 @@
           <li>GitHub Actions</li>
           <li>Terraform · Ansible</li>
         </ul>
-        <p class="stack-group-label">Embedded</p>
+        <p class="stack-group-label">Embedded systems (MCU)</p>
         <ul class="stack-list">
           <li>C / C++</li>
           <li>STM32 · ESP32</li>
           <li>FreeRTOS</li>
+          <li>JTAG / OpenOCD</li>
+          <li>Modbus / OT I/O</li>
+        </ul>
+        <p class="stack-group-label">Embedded software (Linux)</p>
+        <ul class="stack-list">
           <li>Buildroot</li>
           <li>Yocto / BitBake</li>
           <li>Device tree</li>
-          <li>Modbus / OT</li>
+          <li>systemd on device</li>
+          <li>Cross-compile / SDK</li>
         </ul>
         <p class="stack-group-label">Networking</p>
         <ul class="stack-list">
@@ -576,8 +754,9 @@
       <section class="wrap section contact" id="contact">
         <h2>Contact</h2>
         <p>
-          Open to <strong>security research</strong>, <strong>embedded Linux/firmware</strong>,
-          <strong>network engineering</strong>, commerce platforms, and DevOps engagements.
+          Open to <strong>software engineering</strong>, <strong>embedded systems</strong> and
+          <strong>embedded software</strong> work, <strong>security research</strong>,
+          <strong>network engineering</strong>, and DevOps engagements.
         </p>
         <ul class="contact-list">
           <li><span class="contact-k">Email</span><a href="mailto:askdenlitecrete@gmail.com">askdenlitecrete@gmail.com</a></li>

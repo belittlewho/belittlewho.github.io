@@ -231,6 +231,58 @@ nav a:hover {
   margin-bottom: 1.25rem !important;
 }
 
+.discipline-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .discipline-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.discipline-card a {
+  display: block;
+  height: 100%;
+  padding: 1.35rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: border-color 0.15s ease;
+}
+
+.discipline-card a:hover {
+  border-color: #4a4844;
+}
+
+.discipline-num {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.discipline-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.discipline-card p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--muted);
+  max-width: none;
+}
+
 .cards {
   list-style: none;
   padding: 0;
