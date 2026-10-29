@@ -347,6 +347,58 @@ nav a:hover {
   color: var(--muted);
 }
 
+.stack-group-label {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin: 0 0 0.65rem;
+}
+
+.stack-group-label:not(:first-of-type) {
+  margin-top: 1.5rem;
+}
+
+.skill-columns {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 720px) {
+  .skill-columns {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.skill-columns > li {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.15rem 1.25rem;
+}
+
+.skill-columns h3 {
+  margin: 0 0 0.65rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.skill-columns ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.skill-columns li {
+  margin-bottom: 0.35rem;
+}
+
 .contact-list {
   list-style: none;
   padding: 0;

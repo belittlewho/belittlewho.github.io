@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Humphrey Wills Tay — software engineer building commerce platforms, DevOps, and open learning guides."
+      content="Humphrey Wills Tay — software & embedded systems engineer. Commerce, Voltic Cool Pac (Golden Rains LTD.), DevOps, and open guides."
     />
-    <title>Humphrey Wills Tay · Software Engineer</title>
+    <title>Humphrey Wills Tay · Software &amp; Embedded Systems Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,6 +23,7 @@
         <a class="logo" href="#">HWT</a>
         <nav aria-label="Primary">
           <a href="#work">Work</a>
+          <a href="#embedded">Embedded</a>
           <a href="#guides">Guides</a>
           <a href="#stack">Stack</a>
           <a href="#contact">Contact</a>
@@ -33,11 +34,11 @@
 
     <main id="main">
       <section class="hero wrap">
-        <p class="eyebrow">Software engineer · Ghana</p>
+        <p class="eyebrow">Software &amp; embedded systems · Ghana</p>
         <h1>Humphrey Wills Tay</h1>
         <p class="lead">
-          I build <strong>commerce and operations software</strong> — APIs, storefronts,
-          warehouse tooling, and the Linux/CI pipelines that ship them safely.
+          I build <strong>web platforms and firmware</strong> — from Medusa storefronts and DevOps
+          pipelines to <strong>microcontroller-based control and sensing</strong> on the plant floor.
         </p>
         <div class="hero-cta">
           <a class="btn primary" href="#work">View work</a>
@@ -51,6 +52,13 @@
           I work on <strong>Askden Ghana</strong> — a multi-channel platform for cast concrete,
           fibreglass, and related products — using <strong>Medusa 2</strong> and
           <strong>Next.js</strong> for B2C and B2B, with payments, credit, and warehouse workflows.
+        </p>
+        <p>
+          At <strong>Voltic (Golden Rains LTD.)</strong> — a
+          <strong>Voltic Cool Pac</strong> franchise producing certified bagged drinking water — I
+          apply <strong>embedded systems engineering</strong> alongside production and operational
+          technology: interfacing sensors and controllers, reliable firmware, and practical automation
+          on the line.
         </p>
         <p>
           I also publish <strong>open, book-style guides</strong> on GitHub for solo engineers who
@@ -72,6 +80,24 @@
               <li><a href="https://shop.askdengh.com" rel="noopener noreferrer">B2C storefront</a></li>
               <li><a href="https://trade.askdengh.com" rel="noopener noreferrer">B2B storefront</a></li>
               <li><a href="https://github.com/ASKDEN-LITECRETE" rel="noopener noreferrer">Organization</a></li>
+            </ul>
+          </li>
+          <li class="card card-featured">
+            <span class="tag">Production · Voltic franchise</span>
+            <h3>Voltic — Golden Rains LTD.</h3>
+            <p>
+              <strong>Golden Rains LTD.</strong> operates under the Voltic Ghana
+              <strong>Cool Pac</strong> programme — GSA-certified bagged drinking water production in
+              Greater Accra. Work spans <strong>embedded control &amp; monitoring</strong>, production
+              systems support, and software that keeps the plant running safely and consistently.
+            </p>
+            <ul class="links">
+              <li>
+                <a href="https://volticghana.com/about-us/" rel="noopener noreferrer">Voltic Ghana</a>
+              </li>
+              <li>
+                <a href="https://wa.me/message/RADNLYTIONVIL1" rel="noopener noreferrer">Golden Rains contact</a>
+              </li>
             </ul>
           </li>
           <li class="card">
@@ -108,6 +134,43 @@
         </ul>
       </section>
 
+      <section class="wrap section" id="embedded">
+        <h2>Embedded systems engineering</h2>
+        <p class="section-intro">
+          Firmware and hardware–software integration for reliable devices on the bench and on the
+          production line — not only application code in the cloud.
+        </p>
+        <ul class="skill-columns">
+          <li>
+            <h3>Firmware &amp; MCUs</h3>
+            <ul>
+              <li>Embedded C / C++</li>
+              <li>STM32, ESP32, AVR / Arduino-class platforms</li>
+              <li>Bare-metal and RTOS (FreeRTOS)</li>
+              <li>Bootloaders, watchdogs, low-power modes</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Interfaces &amp; I/O</h3>
+            <ul>
+              <li>UART, I2C, SPI, GPIO, PWM</li>
+              <li>Sensors (level, flow, temperature, pressure)</li>
+              <li>Actuators, relays, motor drivers</li>
+              <li>Modbus / serial industrial devices (where deployed)</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Tools &amp; practice</h3>
+            <ul>
+              <li>Schematic-aware debugging; logic analyzer / oscilloscope</li>
+              <li>Cross-compilation, JTAG/SWD, firmware versioning</li>
+              <li>Python test jigs &amp; logging bridges to Linux hosts</li>
+              <li>Documentation, traceability, and safe rollout on physical systems</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
       <section class="wrap section" id="guides">
         <h2>Writing &amp; learning</h2>
         <p class="section-intro">
@@ -131,6 +194,7 @@
 
       <section class="wrap section" id="stack">
         <h2>Stack</h2>
+        <p class="stack-group-label">Software &amp; platform</p>
         <ul class="stack-list">
           <li>TypeScript / Node.js</li>
           <li>Next.js / React</li>
@@ -142,11 +206,24 @@
           <li>Terraform &amp; Ansible</li>
           <li>AWS · Vercel · Render</li>
         </ul>
+        <p class="stack-group-label">Embedded &amp; edge</p>
+        <ul class="stack-list">
+          <li>C / C++ firmware</li>
+          <li>STM32 · ESP32</li>
+          <li>FreeRTOS</li>
+          <li>I2C · SPI · UART</li>
+          <li>GPIO · PWM · ADC</li>
+          <li>Sensor integration</li>
+          <li>Modbus / serial OT</li>
+        </ul>
       </section>
 
       <section class="wrap section contact" id="contact">
         <h2>Contact</h2>
-        <p>Open to engineering roles, contract work, and collaborations on commerce or platform tooling.</p>
+        <p>
+          Open to roles and collaborations on <strong>embedded products</strong>, commerce platforms,
+          plant/OT software, and DevOps.
+        </p>
         <ul class="contact-list">
           <li>
             <span class="contact-k">Email</span>
